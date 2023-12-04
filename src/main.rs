@@ -20,6 +20,7 @@ impl Arguments {
             return Err("Not enough arguments");
         } else if args.len() > 4 {
             return Err("Too many arguments");
+            
         }
         let flag = args[1].clone();
         if let Ok(ip_addr) = IpAddr::from_str(&flag) {
